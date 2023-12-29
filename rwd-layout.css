@@ -5,6 +5,14 @@
     margin-bottom: 15px;
     text-align: center;
 }
+.desktop-menu{
+    text-align: center;
+    display: block;
+}
+.mobile-menu{
+    text-align: center;
+    display:none;
+}
 .list{
     display:flex;
     justify-content: center;
@@ -30,18 +38,23 @@
 @media (max-width:500px) {
     /* If the screen size is smaller than 500px, use this setting */
     .headline {
-            font-size: 25px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            text-align: center;
-        }
+        font-size: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .desktop-menu {
+        display: none;
+    }
+    
+    .mobile-menu {
+        display: block;
+    }
     .list {
         flex-wrap: wrap;
-
     }
 
     .product {
         width: 90%;
-
     }
 }
