@@ -1,0 +1,47 @@
+/* Original setting */
+.headline{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.list{
+    display:flex;
+    justify-content: center;
+}
+.product{
+    flex:none;
+    width:280px;
+    margin: 10px;
+    background-color: pink;
+}
+@media (max-width:1250px){
+    /* If the screen size is smaller than 1250px, use this setting */
+    .list{
+        flex-wrap: wrap;
+
+    }
+    .product{
+        width:45%;
+
+    }
+}
+
+@media (max-width:500px) {
+    /* If the screen size is smaller than 500px, use this setting */
+    .headline {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    .list {
+        flex-wrap: wrap;
+
+    }
+
+    .product {
+        width: 90%;
+
+    }
+}
