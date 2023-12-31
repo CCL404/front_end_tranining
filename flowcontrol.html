@@ -7,7 +7,15 @@
     </head>
     <body>
         <script>
-            
+            let money=prompt("How much money do you want to withdraw?","");
+            if(money<100){
+                console.log("OK");
+            }else if(money<=100000){
+                console.log("The minumum value is 100");
+            }else{
+                console.log("The maximum value is 100,000");
+            }
+            console.log("End of conditional expressions");
         </script>
     </body>
 </html>
