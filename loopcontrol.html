@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Control the scale-->
+        <meta charset="utf-8" />
+        <title>LoopControl</title>
+    </head>
+    <body>
+        <script>
+            // Break example
+            let n=0;
+            while(n<3){
+                if(n==1){
+                    break;
+                }
+                console.log(n);
+                n++;
+            }
+            // Continue example
+            for(let m=0;m<3;m++){
+                if(m==1){
+                    continue;  // if m==2, skip this loop and jump to next loop, the result of this loop won't be processed anymore
+                }
+                console.log(m);
+            }
+
+            for(let i=0;i<5;i++){
+                if(i%2==0){
+                    continue;
+                }
+                console.log(i);
+            }
+        </script>
+    </body>
+</html>
